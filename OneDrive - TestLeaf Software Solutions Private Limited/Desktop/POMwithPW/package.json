@@ -1,0 +1,19 @@
+{
+  "name": "pomwithpw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.45.3",
+    "@types/node": "^22.0.2"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.6",
+    "csv-parser": "^3.0.0",
+    "date-fns": "^3.6.0"
+  }
+}
