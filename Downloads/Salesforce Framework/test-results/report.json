@@ -1,0 +1,296 @@
+{
+  "config": {
+    "configFile": "C:\\Playwright Workspace\\New\\playwright-salesforce-april\\playwright.config.ts",
+    "rootDir": "C:/Playwright Workspace/New/playwright-salesforce-april/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "C:\\Playwright Workspace\\New\\playwright-salesforce-april\\auth\\global-setup.ts",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../test-results/report.json"
+        }
+      ],
+      [
+        "C:\\Playwright Workspace\\New\\playwright-salesforce-april\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "detail": true,
+          "outputFolder": "my-allure-results",
+          "suiteTitle": false
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Playwright Workspace/New/playwright-salesforce-april/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Playwright Workspace/New/playwright-salesforce-april/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 240000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.45.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "fixtures\\learningCertificate.spec.ts",
+      "file": "fixtures/learningCertificate.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Salesforce Verification",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 20731,
+                  "error": {
+                    "message": "AxiosError: Request failed with status code 400",
+                    "stack": "AxiosError: Request failed with status code 400\n    at settle (C:\\Playwright Workspace\\New\\playwright-salesforce-april\\node_modules\\axios\\lib\\core\\settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (C:\\Playwright Workspace\\New\\playwright-salesforce-april\\node_modules\\axios\\lib\\adapters\\http.js:589:11)\n    at Axios.request (C:\\Playwright Workspace\\New\\playwright-salesforce-april\\node_modules\\axios\\lib\\core\\Axios.js:45:41)"
+                  },
+                  "errors": [
+                    {
+                      "message": "AxiosError: Request failed with status code 400\n\n\u001b[2m    at settle (C:\\Playwright Workspace\\New\\playwright-salesforce-april\\node_modules\\axios\\lib\\core\\settle.js:19:12)\u001b[22m\n\u001b[2m    at IncomingMessage.handleStreamEnd (C:\\Playwright Workspace\\New\\playwright-salesforce-april\\node_modules\\axios\\lib\\adapters\\http.js:589:11)\u001b[22m\n\u001b[2m    at Axios.request (C:\\Playwright Workspace\\New\\playwright-salesforce-april\\node_modules\\axios\\lib\\core\\Axios.js:45:41)\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Logging in...\n"
+                    },
+                    {
+                      "text": "Navigating to mobilePublisher...\n"
+                    },
+                    {
+                      "text": "Setting up promise to wait for new page event.\n"
+                    },
+                    {
+                      "text": "Clicking on locator: //span[text()='Learn More'] to open new window.\n"
+                    },
+                    {
+                      "text": "Waiting for the new window to be available.\n"
+                    },
+                    {
+                      "text": "New window found, waiting for load state.\n"
+                    },
+                    {
+                      "text": "New window detected: URL = https://testleaf30-dev-ed.develop.my.salesforce.com/HelpAndTrainingDoor?version=2&resource=https://www.salesforce.com/products/platform/products/mysalesforce/\n"
+                    },
+                    {
+                      "text": "Clicking Confirm button...\n"
+                    },
+                    {
+                      "text": "Attempting to click Confirm on window with URL: https://testleaf30-dev-ed.develop.my.salesforce.com/HelpAndTrainingDoor?version=2&resource=https://www.salesforce.com/products/platform/products/mysalesforce/\n"
+                    },
+                    {
+                      "text": "Clicked Confirm button on new window.\n"
+                    },
+                    {
+                      "text": "Interacting with 'Learning'...\n"
+                    },
+                    {
+                      "text": "URL of the current page: https://www.salesforce.com/products/platform/products/mysalesforce/\n"
+                    },
+                    {
+                      "text": "Clicked on 'Learning' on the new window.\n"
+                    },
+                    {
+                      "text": "The API request is successful\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Window is opened",
+                      "duration": 7098,
+                      "steps": [
+                        {
+                          "title": "The Learn More Button is clicked",
+                          "duration": 6604
+                        }
+                      ]
+                    }
+                  ],
+                  "startTime": "2024-07-06T00:54:23.233Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Playwright Workspace\\New\\playwright-salesforce-april\\test-results\\fixtures-learningCertificate-Verify-Salesforce-Verification-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Playwright Workspace\\New\\playwright-salesforce-april\\test-results\\fixtures-learningCertificate-Verify-Salesforce-Verification-chromium\\test-finished-2.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Playwright Workspace\\New\\playwright-salesforce-april\\test-results\\fixtures-learningCertificate-Verify-Salesforce-Verification-chromium\\video.webm"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Playwright Workspace\\New\\playwright-salesforce-april\\test-results\\fixtures-learningCertificate-Verify-Salesforce-Verification-chromium\\video-1.webm"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 1,
+                  "status": "failed",
+                  "duration": 21262,
+                  "error": {
+                    "message": "AxiosError: Request failed with status code 400",
+                    "stack": "AxiosError: Request failed with status code 400\n    at settle (C:\\Playwright Workspace\\New\\playwright-salesforce-april\\node_modules\\axios\\lib\\core\\settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (C:\\Playwright Workspace\\New\\playwright-salesforce-april\\node_modules\\axios\\lib\\adapters\\http.js:589:11)\n    at Axios.request (C:\\Playwright Workspace\\New\\playwright-salesforce-april\\node_modules\\axios\\lib\\core\\Axios.js:45:41)"
+                  },
+                  "errors": [
+                    {
+                      "message": "AxiosError: Request failed with status code 400\n\n\u001b[2m    at settle (C:\\Playwright Workspace\\New\\playwright-salesforce-april\\node_modules\\axios\\lib\\core\\settle.js:19:12)\u001b[22m\n\u001b[2m    at IncomingMessage.handleStreamEnd (C:\\Playwright Workspace\\New\\playwright-salesforce-april\\node_modules\\axios\\lib\\adapters\\http.js:589:11)\u001b[22m\n\u001b[2m    at Axios.request (C:\\Playwright Workspace\\New\\playwright-salesforce-april\\node_modules\\axios\\lib\\core\\Axios.js:45:41)\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Logging in...\n"
+                    },
+                    {
+                      "text": "Navigating to mobilePublisher...\n"
+                    },
+                    {
+                      "text": "Setting up promise to wait for new page event.\n"
+                    },
+                    {
+                      "text": "Clicking on locator: //span[text()='Learn More'] to open new window.\n"
+                    },
+                    {
+                      "text": "Waiting for the new window to be available.\n"
+                    },
+                    {
+                      "text": "New window found, waiting for load state.\n"
+                    },
+                    {
+                      "text": "New window detected: URL = https://testleaf30-dev-ed.develop.my.salesforce.com/HelpAndTrainingDoor?version=2&resource=https://www.salesforce.com/products/platform/products/mysalesforce/\n"
+                    },
+                    {
+                      "text": "Clicking Confirm button...\n"
+                    },
+                    {
+                      "text": "Attempting to click Confirm on window with URL: https://testleaf30-dev-ed.develop.my.salesforce.com/HelpAndTrainingDoor?version=2&resource=https://www.salesforce.com/products/platform/products/mysalesforce/\n"
+                    },
+                    {
+                      "text": "Clicked Confirm button on new window.\n"
+                    },
+                    {
+                      "text": "Interacting with 'Learning'...\n"
+                    },
+                    {
+                      "text": "URL of the current page: https://www.salesforce.com/products/platform/products/mysalesforce/\n"
+                    },
+                    {
+                      "text": "Clicked on 'Learning' on the new window.\n"
+                    },
+                    {
+                      "text": "The API request is successful\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "steps": [
+                    {
+                      "title": "Window is opened",
+                      "duration": 5932,
+                      "steps": [
+                        {
+                          "title": "The Learn More Button is clicked",
+                          "duration": 5491
+                        }
+                      ]
+                    }
+                  ],
+                  "startTime": "2024-07-06T00:54:47.445Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Playwright Workspace\\New\\playwright-salesforce-april\\test-results\\fixtures-learningCertificate-Verify-Salesforce-Verification-chromium-retry1\\test-finished-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Playwright Workspace\\New\\playwright-salesforce-april\\test-results\\fixtures-learningCertificate-Verify-Salesforce-Verification-chromium-retry1\\test-finished-2.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Playwright Workspace\\New\\playwright-salesforce-april\\test-results\\fixtures-learningCertificate-Verify-Salesforce-Verification-chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Playwright Workspace\\New\\playwright-salesforce-april\\test-results\\fixtures-learningCertificate-Verify-Salesforce-Verification-chromium-retry1\\video-1.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6e2eaf7e62a49c1e60c1-c6ab0139e04754a8cc7f",
+          "file": "fixtures/learningCertificate.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-07-06T00:54:18.866Z",
+    "duration": 54155.798,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

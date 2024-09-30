@@ -1,0 +1,23 @@
+{
+  "name": "aug_pw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^22.7.3"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.0.3",
+    "csv-parse": "^5.5.6",
+    "faker": "^6.6.6",
+    "faker-js": "^1.0.0"
+  }
+}
